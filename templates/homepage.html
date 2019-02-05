@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% from "macros/job-post.html" import render_job_post %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+{% set jobs = site.get('/jobs') %}
+{% for job in jobs.children %}
+{{ render_job_post(job) }}
+{% endfor %}
+{% endblock %}
+
