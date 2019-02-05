@@ -1,0 +1,22 @@
+<RoutingRules>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>affiliate-product-1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>geni.us</HostName>
+      <ReplaceKeyPrefixWith>ABC123D</ReplaceKeyPrefixWith>
+      <HttpRedirectCode>301</HttpRedirectCode>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>github</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>github.com</HostName>
+      <ReplaceKeyPrefixWith>mdashx/recruiterbrosg</ReplaceKeyPrefixWith>
+      <HttpRedirectCode>302</HttpRedirectCode>
+    </Redirect>
+  </RoutingRule>
+</RoutingRules>
